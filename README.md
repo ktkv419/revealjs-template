@@ -15,13 +15,13 @@ RevealJS is an awesome library that lets your create beautiful HTML, CSS, JavaSc
 - [Tokyo Night colorscheme](https://github.com/folke/tokyonight.nvim?tab=readme-ov-file) (+syntax highlighting)
 - Inline code highlighting with [HighlightJS](https://github.com/highlightjs/highlight.js)
 - [Awesome Icons](https://fontawesome.com)
+- [QRCode generation](https://goqr.me/)
 
 Changes described here are presented in main branch, all experimentational features will be added in new releases
 
 ## Planned
 - Interactivity mechanics
 - PlantUML integration
-- Automatic QR-code generation
 - Realtime CSS editing through text field
 
 ## Troubleshooting
