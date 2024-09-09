@@ -71,7 +71,7 @@ const Plugin = {
 
 		// Run initial highlighting for all code
 		if( config.highlightOnLoad ) {
-			Array.from( reveal.getRevealElement().querySelectorAll( 'pre code' ) ).forEach( block => {
+			Array.from( reveal.getRevealElement().querySelectorAll( 'code' ) ).forEach( block => {
 				Plugin.highlightBlock( block );
 			} );
 		}

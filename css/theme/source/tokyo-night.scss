@@ -1,0 +1,89 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+// Override theme settings (see ../template/settings.scss)
+$blue0: rgb(61, 89, 161);
+$blue: rgb(122, 162, 247);
+$cyan: rgb(125, 207, 255);
+$magenta: rgb(187, 154, 247);
+$orange: rgb(255, 158, 100);
+$yellow: rgb( 224, 175, 104);
+$green: rgb(158, 206, 106);
+$teal: rgb(26, 188, 156);
+$red: rgb(255, 117, 127);
+$red1: rgb(219, 75, 75);
+$fg: rgb(192, 202, 245);
+$bg: rgb(26, 27, 38);
+
+$backgroundColor: $bg; 
+
+$mainColor: $fg;
+
+$mainFontSize: 32px;
+$mainFont: "Ubuntu", Helvetica, sans-serif;
+$headingFont: "Ubuntu", Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $blue;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba($linkColor, 0.75);
+
+$heading1Color: $red;
+$heading2Color: $yellow;
+$heading3Color: $green;
+$heading4Color: $cyan;
+$heading5Color: $blue;
+$heading6Color: $magenta;
+
+$heading1Size: 1.8em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1 {
+  color: $heading1Color;
+}
+
+.reveal h2 {
+  color: $heading2Color;
+}
+
+.reveal h3 {
+  color: $heading3Color;
+}
+
+.reveal h4 {
+  color: $heading4Color;
+}
+
+.reveal h5 {
+  color: $heading5Color;
+}
+
+.reveal h6 {
+  color: $heading6Color;
+}
+
+.reveal p {
+  text-align: justify;
+}

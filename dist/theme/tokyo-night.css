@@ -3,7 +3,7 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
 }
@@ -12,14 +12,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-background-color: rgb(26, 27, 38);
+  --r-main-font: Ubuntu, Helvetica, sans-serif;
   --r-main-font-size: 32px;
-  --r-main-color: #fff;
+  --r-main-color: rgb(192, 202, 245);
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #fff;
+  --r-heading-font: Ubuntu, Helvetica, sans-serif;
+  --r-heading-color: #eee;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -31,17 +31,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #42affa;
-  --r-link-color-dark: #068de9;
-  --r-link-color-hover: #8dcffc;
-  --r-selection-background-color: rgba(66, 175, 250, 0.75);
+  --r-link-color: rgb(122, 162, 247);
+  --r-link-color-dark: #3270f3;
+  --r-link-color-hover: #c2d4fb;
+  --r-selection-background-color: rgba(122, 162, 247, 0.75);
   --r-selection-color: #fff;
   --r-overlay-element-bg-color: 240, 240, 240;
   --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
-  background: #191919;
+  background: rgb(26, 27, 38);
   background-color: var(--r-background-color);
 }
 
@@ -357,9 +357,30 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: var(--r-background-color);
   }
 }
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal span.highlight {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(-45deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.reveal h1 {
+  color: rgb(255, 117, 127);
+}
+
+.reveal h2 {
+  color: rgb(224, 175, 104);
+}
+
+.reveal h3 {
+  color: rgb(158, 206, 106);
+}
+
+.reveal h4 {
+  color: rgb(125, 207, 255);
+}
+
+.reveal h5 {
+  color: rgb(122, 162, 247);
+}
+
+.reveal h6 {
+  color: rgb(187, 154, 247);
+}
+
+.reveal p {
+  text-align: justify;
 }
