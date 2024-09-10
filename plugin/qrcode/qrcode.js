@@ -21,4 +21,9 @@ const getQRCode = async (url) => {
 
 const QRCodes = document.querySelectorAll('img[data-type="qrcode"]')
 
-Array.from(QRCodes).forEach(async (el) => (el.src = await getQRCode(el.alt)))
+Array.from(QRCodes).forEach(async (el) => {
+  el.src = await getQRCode(el.alt)
+  el.onclick = () => {
+    window.open(el.alt)
+  }
+})

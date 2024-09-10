@@ -396,6 +396,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
   white-space: none;
 }
 
+img[data-type=qrcode] {
+  cursor: pointer;
+  transition: filter 0.15s ease;
+  filter: grayscale(0%) contrast(1);
+}
+img[data-type=qrcode]:hover {
+  filter: grayscale(50%) contrast(10);
+}
+
+pre code {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
 div.border,
 div[class^=border-] {
   border-radius: 0.5em;

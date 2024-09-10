@@ -101,6 +101,15 @@ $heading4Size: 1em;
   white-space: none;
 }
 
+img[data-type="qrcode"] {
+  cursor: pointer;
+}
+
+pre code {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
 div.border,
 div[class^="border-"] {
   border-radius: 0.5em;
