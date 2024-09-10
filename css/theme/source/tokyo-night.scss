@@ -10,7 +10,8 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url(./fonts/ubuntu/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
 $blue0: rgb(61, 89, 161);
@@ -31,8 +32,8 @@ $backgroundColor: $bg;
 $mainColor: $fg;
 
 $mainFontSize: 28px;
-$mainFont: "Ubuntu", Helvetica, sans-serif;
-$headingFont: "Ubuntu", Helvetica, sans-serif;
+$mainFont: "Ubuntu Nerd Font", "Ubuntu", Helvetica, sans-serif;
+$headingFont: "Ubuntu Nerd Font", "Ubuntu", Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -41,7 +42,7 @@ $linkColor: $blue;
 $linkColorHover: lighten($linkColor, 15%);
 $selectionBackgroundColor: rgba($linkColor, 0.75);
 
-$codeFont: "Comic Sans", "serif";
+$codeFont: "Fira Code", "sans-serif";
 
 $heading1Color: $red;
 $heading2Color: $yellow;
@@ -100,7 +101,8 @@ $heading4Size: 1em;
   white-space: none;
 }
 
-div.border, div[class^="border-"] {
+div.border,
+div[class^="border-"] {
   border-radius: 0.5em;
   border: solid 2px;
   padding: 0.5em;

@@ -14,7 +14,7 @@ RevealJS is an awesome library that lets your create beautiful HTML, CSS, JavaSc
 ## Done
 - [Tokyo Night colorscheme](https://github.com/folke/tokyonight.nvim?tab=readme-ov-file) (+syntax highlighting)
 - Inline code highlighting with [HighlightJS](https://github.com/highlightjs/highlight.js)
-- [Awesome Icons](https://fontawesome.com)
+- [Nerd Icons](https://www.nerdfonts.com/)
 - [QRCode generation](https://goqr.me/)
 
 Changes described here are presented in main branch, all experimentational features will be added in new releases
@@ -27,5 +27,3 @@ Changes described here are presented in main branch, all experimentational featu
 ## Troubleshooting
 ### HightlightJS doesnt pick up right language during highlighting
 You need to manually set its language by adding `class="js"` to code tag. [List of supported languages](https://highlightjs.readthedocs.io/en/latest/supported-languages.html)
-### Why awesome icons don't work?
-You need to [create an account](https://fontawesome.com/start), add your host to allowed domains and change URL in head tag

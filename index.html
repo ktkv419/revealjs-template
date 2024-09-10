@@ -13,8 +13,7 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
-	<script src="https://kit.fontawesome.com/fdcdb1126b.js" crossorigin="anonymous"></script>
-	  <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
 				</h1>
 				<h2>New features</h2>
 				<ul>
-					<li>Awesome icons <i class="fa-solid fa-check"></i></li>
+					<li>Nerd icons </li>
 					<li><code class="js">(inline) => code("highlighting")</code></li>
 					<li>Automatic QR Code generation</li>
 					<li>and much more!</li>
@@ -41,8 +40,7 @@
 				<h4 class="fragment">Level</h4>
 				<h5 class="fragment">Heading</h5>
 				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"><i
-							class="fa-brands fa-github"></i></a> for the colorscheme!</h6>
+				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the colorscheme!</h6>
 			</section>
 			<section>
 				<section>
@@ -86,9 +84,9 @@
 			<section>
 				<section data-auto-animate>
 					<h1>New code highlighting!</h1>
-					<p>
+					<div>
 						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
-					</p>
+					</div>
 					<pre><code data-trim data-noescape>
 var foo = {
     bar: function () {
@@ -108,15 +106,14 @@ var foo = {
 			</section>
 			<section>
 				<h1>Now supports Awesome Icons!</h1>
-				<p>Awesome project that provides awesome icons with classes!</p>
-				<h6>Checkout their github for icons like this <a href="https://github.com/FortAwesome/Font-Awesome"><i
-							class="fa-brands fa-github"></i></a>!
+				<div>Awesome project that provides awesome icons with classes!</div>
+				<h6>Checkout their github for icons like this <a href="https://github.com/FortAwesome/Font-Awesome"></a>!
 				</h6>
 			</section>
 			<section>
 				<h1>Now supports automatic QRCode generation!</h1>
-				<p>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" /&gt;</code> tag!</p>
+				<div>With GoQR you can just add data-type and alt attributes to your <code
+						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
 				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
 				</h6>
 			</section>
@@ -131,6 +128,13 @@ var foo = {
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/qrcode/qrcode.js"></script>
+	<script>
+		tailwind.config = {
+			corePlugins: {
+				preflight: false,
+			}
+		}
+	</script>
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/

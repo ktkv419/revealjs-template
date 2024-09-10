@@ -3,7 +3,8 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url(./fonts/ubuntu/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
 }
@@ -13,12 +14,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --r-background-color: rgb(26, 27, 38);
-  --r-main-font: Ubuntu, Helvetica, sans-serif;
+  --r-main-font: Ubuntu Nerd Font, Ubuntu, Helvetica, sans-serif;
   --r-main-font-size: 28px;
   --r-main-color: rgb(192, 202, 245);
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Ubuntu, Helvetica, sans-serif;
+  --r-heading-font: Ubuntu Nerd Font, Ubuntu, Helvetica, sans-serif;
   --r-heading-color: #eee;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
@@ -30,7 +31,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading2-size: 1.6em;
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
-  --r-code-font: Comic Sans, serif;
+  --r-code-font: Fira Code, sans-serif;
   --r-link-color: rgb(122, 162, 247);
   --r-link-color-dark: #3270f3;
   --r-link-color-hover: #c2d4fb;
@@ -395,7 +396,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   white-space: none;
 }
 
-div.border, div[class^=border-] {
+div.border,
+div[class^=border-] {
   border-radius: 0.5em;
   border: solid 2px;
   padding: 0.5em;
