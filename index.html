@@ -14,24 +14,23 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
 	<script src="https://kit.fontawesome.com/fdcdb1126b.js" crossorigin="anonymous"></script>
+	  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<section>
-					<h1>
-						Beautiful presentations
-					</h1>
-					<h2>New features</h2>
-					<ul>
-						<li>Awesome icons <i class="fa-solid fa-check"></i></li>
-						<li><code class="js">(inline) => code("highlighting")</code></li>
-						<li>Automatic QR Code generation</li>
-						<li>and much more!</li>
-					</ul>
-				</section>
+				<h1>
+					Beautiful presentations
+				</h1>
+				<h2>New features</h2>
+				<ul>
+					<li>Awesome icons <i class="fa-solid fa-check"></i></li>
+					<li><code class="js">(inline) => code("highlighting")</code></li>
+					<li>Automatic QR Code generation</li>
+					<li>and much more!</li>
+				</ul>
 			</section>
 			<section>
 				<h1>
@@ -44,6 +43,45 @@
 				<h6 class="fragment">Coloring</h6>
 				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"><i
 							class="fa-brands fa-github"></i></a> for the colorscheme!</h6>
+			</section>
+			<section>
+				<section>
+					<h1>Tailwind CSS</h1>
+					<div class="grid grid-cols-2 gap-8">
+						<div>
+							<h5>Lorem, ipsum.</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
+								dignissimos, maxime possimus? Error, nihil in.</p>
+						</div>
+						<div>
+							<h5>Lorem, ipsum.</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
+								dignissimos, maxime possimus? Error, nihil in.</p>
+						</div>
+						<div class="col-span-2">
+							<h5>Lorem, ipsum.</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
+								dignissimos, maxime possimus? Error, nihil in.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Custom classes</h1>
+					<div class="grid grid-cols-3 gap-8">
+						<div class="border-r">
+							<h5>border-r</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						</div>
+						<div class="border-o">
+							<h5>border-o</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						</div>
+						<div class="border-y">
+							<h5>border-y</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section data-auto-animate>
@@ -101,7 +139,8 @@ var foo = {
 			hash: true,
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			slideNumber: true
 		});
 	</script>
 </body>

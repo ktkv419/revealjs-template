@@ -14,7 +14,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 :root {
   --r-background-color: rgb(26, 27, 38);
   --r-main-font: Ubuntu, Helvetica, sans-serif;
-  --r-main-font-size: 32px;
+  --r-main-font-size: 28px;
   --r-main-color: rgb(192, 202, 245);
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -30,7 +30,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading2-size: 1.6em;
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
-  --r-code-font: monospace;
+  --r-code-font: Comic Sans, serif;
   --r-link-color: rgb(122, 162, 247);
   --r-link-color-dark: #3270f3;
   --r-link-color-hover: #c2d4fb;
@@ -383,4 +383,61 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal p {
   text-align: justify;
+}
+
+.slide-number {
+  top: 1em;
+  right: 1em !important;
+  bottom: unset !important;
+  font-size: 1em !important;
+  background-color: transparent !important;
+  color: rgb(61, 89, 161) !important;
+  white-space: none;
+}
+
+div.border, div[class^=border-] {
+  border-radius: 0.5em;
+  border: solid 2px;
+  padding: 0.5em;
+  border-color: rgb(61, 89, 161);
+}
+
+div.border-b0 {
+  border-color: rgb(61, 89, 161);
+}
+
+div.border-b {
+  border-color: rgb(122, 162, 247);
+}
+
+div.border-c {
+  border-color: rgb(125, 207, 255);
+}
+
+div.border-m {
+  border-color: rgb(187, 154, 247);
+}
+
+div.border-o {
+  border-color: rgb(255, 158, 100);
+}
+
+div.border-y {
+  border-color: rgb(224, 175, 104);
+}
+
+div.border-g {
+  border-color: rgb(158, 206, 106);
+}
+
+div.border-t {
+  border-color: rgb(26, 188, 156);
+}
+
+div.border-r {
+  border-color: rgb(255, 117, 127);
+}
+
+div.border-r1 {
+  border-color: rgb(219, 75, 75);
 }

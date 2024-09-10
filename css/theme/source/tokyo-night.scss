@@ -10,7 +10,7 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
 $blue0: rgb(61, 89, 161);
@@ -18,7 +18,7 @@ $blue: rgb(122, 162, 247);
 $cyan: rgb(125, 207, 255);
 $magenta: rgb(187, 154, 247);
 $orange: rgb(255, 158, 100);
-$yellow: rgb( 224, 175, 104);
+$yellow: rgb(224, 175, 104);
 $green: rgb(158, 206, 106);
 $teal: rgb(26, 188, 156);
 $red: rgb(255, 117, 127);
@@ -26,11 +26,11 @@ $red1: rgb(219, 75, 75);
 $fg: rgb(192, 202, 245);
 $bg: rgb(26, 27, 38);
 
-$backgroundColor: $bg; 
+$backgroundColor: $bg;
 
 $mainColor: $fg;
 
-$mainFontSize: 32px;
+$mainFontSize: 28px;
 $mainFont: "Ubuntu", Helvetica, sans-serif;
 $headingFont: "Ubuntu", Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -40,6 +40,8 @@ $headingFontWeight: 600;
 $linkColor: $blue;
 $linkColorHover: lighten($linkColor, 15%);
 $selectionBackgroundColor: rgba($linkColor, 0.75);
+
+$codeFont: "Comic Sans", "serif";
 
 $heading1Color: $red;
 $heading2Color: $yellow;
@@ -86,4 +88,61 @@ $heading4Size: 1em;
 
 .reveal p {
   text-align: justify;
+}
+
+.slide-number {
+  top: 1em;
+  right: 1em !important;
+  bottom: unset !important;
+  font-size: 1em !important;
+  background-color: transparent !important;
+  color: $blue0 !important;
+  white-space: none;
+}
+
+div.border, div[class^="border-"] {
+  border-radius: 0.5em;
+  border: solid 2px;
+  padding: 0.5em;
+  border-color: $blue0;
+}
+
+div.border-b0 {
+  border-color: $blue0;
+}
+
+div.border-b {
+  border-color: $blue;
+}
+
+div.border-c {
+  border-color: $cyan;
+}
+
+div.border-m {
+  border-color: $magenta;
+}
+
+div.border-o {
+  border-color: $orange;
+}
+
+div.border-y {
+  border-color: $yellow;
+}
+
+div.border-g {
+  border-color: $green;
+}
+
+div.border-t {
+  border-color: $teal;
+}
+
+div.border-r {
+  border-color: $red;
+}
+
+div.border-r1 {
+  border-color: $red1;
 }
