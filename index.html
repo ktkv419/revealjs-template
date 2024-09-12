@@ -40,7 +40,8 @@
 				<h4 class="fragment">Level</h4>
 				<h5 class="fragment">Heading</h5>
 				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the colorscheme!</h6>
+				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
+					colorscheme!</h6>
 			</section>
 			<section>
 				<section>
@@ -105,6 +106,36 @@ var foo = {
 				</section>
 			</section>
 			<section>
+				<h1>Mermaid for beautiful diagrams!</h1>
+				<div class="mermaid">
+					<pre>
+						erDiagram
+    CUSTOMER ||--o{ ORDER : ""
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+    ORDER ||--|{ STUDENT : contains
+    STUDENT {
+        int orderNumber
+        string deliveryAddress
+    }
+						</pre>
+				</div>
+				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
+			</section>
+			<section>
 				<h1>Now supports Nerd font icons!</h1>
 				<div>Nerdy project that adds icons to font itself</div>
 				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
@@ -128,6 +159,8 @@ var foo = {
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/qrcode/qrcode.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+
 	<script>
 		tailwind.config = {
 			corePlugins: {
@@ -139,11 +172,39 @@ var foo = {
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
+		
+		const colors = {
+    blue0: 'rgb(61, 89, 161)',
+    blue: 'rgb(122, 162, 247)',
+    cyan: 'rgb(125, 207, 255)',
+    magenta: 'rgb(187, 154, 247)',
+    orange: 'rgb(255, 158, 100)',
+    yellow: 'rgb(224, 175, 104)',
+    green: 'rgb(158, 206, 106)',
+    teal: 'rgb(26, 188, 156)',
+    red: 'rgb(255, 117, 127)',
+    red1: 'rgb(219, 75, 75)',
+    fg: 'rgb(192, 202, 245)',
+    bg: 'rgb(26, 27, 38)',
+		transparent: "#00000000"
+};
+
 		Reveal.initialize({
 			hash: true,
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			slideNumber: true
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid],
+			slideNumber: true,
+			mermaid: {
+				securityLevel: 'loose',
+				theme: "dark",
+				themeVariables: {
+					darkMode: true,
+					textColor: colors.fg,
+					background: colors.bg,
+					mainBkg: colors.bg,
+					lineColor: colors.fg,
+				}
+			}
 		});
 	</script>
 </body>

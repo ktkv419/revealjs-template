@@ -1,17 +1,6 @@
 {
   "name": "reveal.js",
   "version": "5.1.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
-  "main": "dist/reveal.js",
-  "module": "dist/reveal.esm.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "gulp test",
-    "start": "gulp serve",
-    "build": "gulp build"
-  },
   "author": {
     "name": "Hakim El Hattab",
     "email": "hakim.elhattab@gmail.com",
@@ -21,14 +10,8 @@
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "keywords": [
-    "reveal",
-    "slides",
-    "presentation"
-  ],
+  "main": "dist/reveal.js",
+  "module": "dist/reveal.esm.js",
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
@@ -58,11 +41,11 @@
     "sass": "^1.69.5",
     "yargs": "^17.7.2"
   },
-  "overrides": {
-    "chokidar": "3.5.3",
-    "glob-parent": "6.0.2"
-  },
   "browserslist": "> 2%, not dead",
+  "description": "The HTML Presentation Framework",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -100,5 +83,22 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
-  }
+  },
+  "homepage": "https://revealjs.com",
+  "keywords": [
+    "reveal",
+    "slides",
+    "presentation"
+  ],
+  "license": "MIT",
+  "overrides": {
+    "chokidar": "3.5.3",
+    "glob-parent": "6.0.2"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
+  "subdomain": "revealjs"
 }
