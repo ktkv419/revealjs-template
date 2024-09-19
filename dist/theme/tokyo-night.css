@@ -398,11 +398,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 img[data-type=qrcode] {
   cursor: pointer;
-  transition: filter 0.15s ease;
-  filter: grayscale(0%) contrast(1);
-}
-img[data-type=qrcode]:hover {
-  filter: grayscale(50%) contrast(10);
 }
 
 pre code {
@@ -456,4 +451,8 @@ div.border-r {
 
 div.border-r1 {
   border-color: rgb(219, 75, 75);
+}
+
+#notescanvas, #chalkboard, #customcontrols {
+  font-family: "Ubuntu Nerd Font", "Ubuntu", Helvetica, sans-serif !important;
 }

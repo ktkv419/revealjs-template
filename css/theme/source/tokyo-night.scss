@@ -157,3 +157,7 @@ div.border-r {
 div.border-r1 {
   border-color: $red1;
 }
+
+#notescanvas, #chalkboard, #customcontrols {
+  font-family: $mainFont !important;
+}
