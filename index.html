@@ -1,258 +1,314 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>reveal.js</title>
 
-	<title>reveal.js</title>
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
 
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/tokyo-night.css">
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
-	<link rel="stylesheet" href="plugin/chalkboard/style.css">
-	<link rel="stylesheet" href="plugin/customcontrols/style.css">
-	<script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Регулярные выражения</h1>
+                    <img
+                        data-type="qrcode"
+                        class="r-stretch"
+                        alt="https://ktkv-presentations.github.io/algos-14" />
+                </section>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h1>
-					Beautiful presentations
-				</h1>
-				<h2>New features</h2>
-				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
-				</ul>
-			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
-					colorscheme!</h6>
-			</section>
-			<section>
-				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
-					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-				</section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
-				</section>
-			</section>
-			<section>
-				<h1>Mermaid for beautiful diagrams!</h1>
-				<div class="mermaid">
-					<pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre>
-				</div>
-				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
-			</section>
-			<section>
-				<h1>Now supports Nerd font icons!</h1>
-				<div>Nerdy project that adds icons to font itself</div>
-				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
-				</h6>
-			</section>
-			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
-			</section>
-			<section>
-				<h1>New changes on the way!</h1>
-			</section>
-		</div>
-	</div>
+                <section>
+                    <section>
+                        <h1>Регулярные выражения</h1>
+                        <h4>RegEx | RegExp | Regular Expression</h4>
+                        <p>
+                            мощный инструмент для поиска, сопоставления и
+                            манипуляции текстом на основе заданных шаблонов
+                        </p>
+                        <p>
+                            Встречаются в таких языкам как
+                            <code>Python, Java, JavaScript, C#</code>
+                        </p>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Литералы</h4>
+                        <ul>
+                            <li>
+                                Литералы представляют собой символы, которые
+                                совпадают с самими собой в строке.
+                            </li>
+                        </ul>
+                        <p>
+                            Регулярное выражения
+                            <code>cat</code>
+                            в подстроке
+                            <code>cat</code>
+                        </p>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Метасимволы</h4>
+                        <p>
+                            специальные символы, имеющие особое значение в
+                            регулярных выражениях
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>.</code>
+                                <span>
+                                    - любой один символ (кроме символа новой
+                                    строки)
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>^</code>
+                                <span>- начало строки</span>
+                            </div>
+                            <div class="border-b">
+                                <code>$</code>
+                                <span>- конец строки</span>
+                            </div>
+                            <div class="border-b">
+                                <code>*</code>
+                                <span>
+                                    - 0 или больше вхождений предыдущего символа
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Элементы регулярного выражения</h1>
+                        <h4>Метасимволы</h4>
+                        <p>
+                            специальные символы, имеющие особое значение в
+                            регулярных выражениях
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>+</code>
+                                <span>
+                                    1 или больше вхождений предыдущего символа
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>?</code>
+                                <span>
+                                    - 0 или 1 вхождение предыдущего символа
+                                </span>
+                            </div>
+                            <div class="border-b">
+                                <code>|</code>
+                                <span>- логическое ИЛИ</span>
+                            </div>
+                            <div class="border-b">
+                                <code>()</code>
+                                <span>
+                                    – группировка символов или подвыражений
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script src="plugin/qrcode/qrcode.js"></script>
-	<script src="plugin/mermaid/mermaid.js"></script>
-	<script src="plugin/chalkboard/plugin.js"></script>
-	<script src="plugin/customcontrols/plugin.js"></script>
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/qrcode/qrcode.js"></script>
+        <script src="plugin/mermaid/mermaid.js"></script>
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <script src="plugin/customcontrols/plugin.js"></script>
 
-	<script>
-		tailwind.config = {
-			corePlugins: {
-				preflight: false,
-			}
-		}
-	</script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
+        <script>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+            }
+        </script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
 
-		const colors = {
-			blue0: 'rgb(61, 89, 161)',
-			blue: 'rgb(122, 162, 247)',
-			cyan: 'rgb(125, 207, 255)',
-			magenta: 'rgb(187, 154, 247)',
-			orange: 'rgb(255, 158, 100)',
-			yellow: 'rgb(224, 175, 104)',
-			green: 'rgb(158, 206, 106)',
-			teal: 'rgb(26, 188, 156)',
-			red: 'rgb(255, 117, 127)',
-			red1: 'rgb(219, 75, 75)',
-			fg: 'rgb(192, 202, 245)',
-			bg: 'rgb(26, 27, 38)',
-			transparent: "#00000000"
-		};
+            const colors = {
+                blue0: 'rgb(61, 89, 161)',
+                blue: 'rgb(122, 162, 247)',
+                cyan: 'rgb(125, 207, 255)',
+                magenta: 'rgb(187, 154, 247)',
+                orange: 'rgb(255, 158, 100)',
+                yellow: 'rgb(224, 175, 104)',
+                green: 'rgb(158, 206, 106)',
+                teal: 'rgb(26, 188, 156)',
+                red: 'rgb(255, 117, 127)',
+                red1: 'rgb(219, 75, 75)',
+                fg: 'rgb(192, 202, 245)',
+                bg: 'rgb(26, 27, 38)',
+                transparent: '#00000000',
+            }
 
-		Reveal.initialize({
-			hash: true,
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid, RevealChalkboard, RevealCustomControls],
-			slideNumber: true,
-			customcontrols: {
-				controls: [
-					{
-						icon: '<div></div>',
-						title: 'Clear canvas (DEL)',
-						action: 'RevealChalkboard.clear();'
-					},
-					{
-						icon: '<div></div>',
-						title: 'Toggle chalkboard (B)',
-						action: 'RevealChalkboard.toggleChalkboard();'
-					},
-					{
-						icon: '<div></div>',
-						title: 'Toggle notes canvas (C)',
-						action: 'RevealChalkboard.toggleNotesCanvas();'
-					}
-				],
-			},
-			chalkboard: {
-				boardmarkerWidth: 5,
-				boardmarkers: [
-					{ color: colors.bg, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.fg, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.blue, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.red, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.green, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.yellow, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.teal, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-					{ color: colors.orange, cursor: 'url(' + path + 'img/boardmarker-black.png), auto' },
-				],
-				chalks: [
-					{ color: colors.bg, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.fg, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.blue, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.red, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.green, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.yellow, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.teal, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-					{ color: colors.orange, cursor: 'url(' + path + 'img/chalk-white.png), auto' },
-				]
-			},
-			mermaid: {
-				securityLevel: 'loose',
-				theme: "dark",
-				themeVariables: {
-					darkMode: true,
-					textColor: colors.fg,
-					background: colors.bg,
-					mainBkg: colors.bg,
-					lineColor: colors.fg,
-				}
-			}
-		});
-	</script>
-</body>
-
+            Reveal.initialize({
+                hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealMermaid,
+                    RevealChalkboard,
+                    RevealCustomControls,
+                ],
+                slideNumber: true,
+                customcontrols: {
+                    controls: [
+                        {
+                            icon: '<div></div>',
+                            title: 'Clear canvas (DEL)',
+                            action: 'RevealChalkboard.clear();',
+                        },
+                        {
+                            icon: '<div></div>',
+                            title: 'Toggle chalkboard (B)',
+                            action: 'RevealChalkboard.toggleChalkboard();',
+                        },
+                        {
+                            icon: '<div></div>',
+                            title: 'Toggle notes canvas (C)',
+                            action: 'RevealChalkboard.toggleNotesCanvas();',
+                        },
+                    ],
+                },
+                chalkboard: {
+                    boardmarkerWidth: 5,
+                    boardmarkers: [
+                        {
+                            color: colors.bg,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.fg,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.blue,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.red,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.green,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.yellow,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.teal,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.orange,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                    ],
+                    chalks: [
+                        {
+                            color: colors.bg,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.fg,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.blue,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.red,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.green,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.yellow,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.teal,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.orange,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                    ],
+                },
+                mermaid: {
+                    securityLevel: 'loose',
+                    theme: 'dark',
+                    themeVariables: {
+                        darkMode: true,
+                        textColor: colors.fg,
+                        background: colors.bg,
+                        mainBkg: colors.bg,
+                        lineColor: colors.fg,
+                    },
+                },
+            })
+        </script>
+    </body>
 </html>
