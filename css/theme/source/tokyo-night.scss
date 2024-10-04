@@ -87,6 +87,10 @@ $heading4Size: 1em;
   color: $heading6Color;
 }
 
+.reveal h4, .reveal h5, .reveal h6 {
+  text-transform: unset !important;
+}
+
 .reveal p {
   text-align: justify;
 }
